@@ -1,0 +1,80 @@
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+  #map { height: 100vh; }
+  .button-group {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 1000;
+  }
+  .btn {
+    background: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  }
+  .btn:hover {
+    background: #1e7e34;
+  }
+  .basemap-buttons {
+    position: absolute;
+    bottom: 150px;
+    left: 10px;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+  }
+  .basemap-buttons img {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    border: 2px solid #007bff;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s;
+  }
+  .basemap-buttons img:hover {
+    transform: scale(1.1);
+    border-color: #0056b3;
+  }
+  .legend {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    z-index: 1000;
+    max-height: 350px;
+    overflow-y: auto;
+  }
+  .legend ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .legend li {
+    margin: 5px 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+  .legend li img {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+  }
